@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: clover-system
+  name: system-proj
   namespace: argocd
 spec:
   # Deny all cluster-scoped resources from being created, except for Namespace
