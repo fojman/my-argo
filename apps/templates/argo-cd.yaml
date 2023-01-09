@@ -1,7 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root
+  name: argo-cd
+  namespace: default
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -10,9 +11,7 @@ spec:
     namespace: default
   project: default
   source:
-    # root app: recursively look into `apps` folder for `child` apps
-    path: apps/
-    # todo: temp solution till we dont have access to gitlab
+    path: charts/argo-cd
     repoURL: https://github.com/fojman/my-argo.git
     targetRevision: HEAD
   syncPolicy:
