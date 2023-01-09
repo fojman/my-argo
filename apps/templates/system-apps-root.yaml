@@ -2,13 +2,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: system-apps
-  namespace: system
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: system
+    namespace: default
   project: system-proj
   source:
     path: apps/system
