@@ -9,7 +9,7 @@ spec:
     - group: '*'
       kind: '*'
   # Project description
-  description: Project for CT Applications 
+  description: Project for CT Applications
   # Only permit applications to deploy to the guestbook namespace in the same cluster
   destinations:
     - namespace: '*'
