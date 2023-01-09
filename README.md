@@ -1,4 +1,4 @@
-# Begames-EU ArgoCD repository
+# B ArgoCD repository
 
 ## Details
 - we use app-of-apps approach(root app)
